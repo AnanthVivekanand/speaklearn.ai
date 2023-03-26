@@ -1,8 +1,8 @@
 import { Speaking } from '@/pages/api/speaking';
-import { GoogleSpeechRecognition } from 'google-cloud-speech-webaudio';
+import { GoogleSpeechRecognition } from '../../pages/api/google-cloud-speech-webaudio';
 import React, { useState } from 'react';
 
-const AudioRecorder = ({ onRecord }) => {
+const AudioRecorder = ({ onRecord } : any) => {
 const speechRecognition = new GoogleSpeechRecognition("AIzaSyCg2Q9oqiiNXdt09dEAPaIjtwD8mJZAGXk", "https://us-speech.googleapis.com");
   const startRecording = async () => {
     try {
